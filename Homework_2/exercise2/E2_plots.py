@@ -20,10 +20,6 @@ plt.grid()
 
 
 import pandas as pd
-
-#df = pd.read_json('{"Schedules":{"0":"Static","1":"Dynamic","2":"Guided"},"count":{"0":83223.24,"1":225.74,"2":53504.3}}')
-#df.plot(x='Schedules', y='count', kind='bar', legend=False)
-
 df = pd.read_json('{"Schedules":{"0":"Static","1":"Dynamic","2":"Guided"},"count":{"0": 4.920 ,"1":2.353,"2":4.728}}')
 
 
@@ -32,5 +28,6 @@ plt.ylabel('Log')
 plt.title('Ex 2 - Q1.3') 
 plt.savefig('Ex2_Q1_3.png')
 plt.show()
+
 import pdb
 pdb.set_trace()
