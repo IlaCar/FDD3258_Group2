@@ -49,9 +49,12 @@ int main()
         maxval = 0.0; maxloc = 0;
         #pragma omp parallel for 
         for(int i=0; i < N; i++){
-            if (x[i] > maxval){
-                //int id = omp_get_thread_num();
-                maxval = x[i]; maxloc = i;}// printf("%f,%d\n",maxval,id);}
+            #pragma omp critical
+            {
+                if (x[i] > maxval){
+                    //int id = omp_get_thread_num();
+                    maxval = x[i]; maxloc = i;}// printf("%f,%d\n",maxval,id);}                
+            }
         }
         tf[j] = mysecond()-ti;
         //printf("max %f, index %d\n",maxval,maxloc);
