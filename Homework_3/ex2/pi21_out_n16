@@ -1,0 +1,13 @@
+The result is 3.141887
+The result is 3.141965
+The result is 3.142103
+The result is 3.141978
+The result is 3.141954
+Times are:
+0.049994
+0.049892
+0.045722
+0.031039
+0.031048
+Avg time: 0.041539
+Std dev: 0.003894
