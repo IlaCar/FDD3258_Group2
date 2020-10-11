@@ -47,5 +47,5 @@ plt.ylabel('mean time (s)')
 plt.title('Ex 2 - Q2_1 vs Q2_2')
 plt.grid()
 plt.legend()
-
+plt.savefig('Ex2_Q2_1_VS_Q2_2.png')
 plt.show()
